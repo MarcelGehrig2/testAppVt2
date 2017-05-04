@@ -169,6 +169,11 @@ add_executable(add_two_ints_client src/add_two_ints_client.cpp)
 target_link_libraries(add_two_ints_client ${catkin_LIBRARIES})
 add_dependencies(add_two_ints_client beginner_tutorials_gencpp)
 
+
+add_executable(talkerTemperature src/talkerTemperature.cpp)
+target_link_libraries(talkerTemperature ${catkin_LIBRARIES})
+add_dependencies(talker beginner_tutorials_generate_messages_cpp)
+
 #############
 ## Install ##
 #############
