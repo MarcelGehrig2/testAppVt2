@@ -16,6 +16,14 @@ endmacro()
 
 #include_directories(${EEROS_SOURCE_DIR}/includes ${EEROS_BINARY_DIR})
 
+
+if( TESTVAR )
+	message( STATUS "TESTVAR found" )
+else()
+	message( STATUS "TESTVAR NOT found" )
+endif()
+
+
 add_subdirectory(folder1)
 add_subdirectory(folder2)
 

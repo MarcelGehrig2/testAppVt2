@@ -15,6 +15,11 @@ else()
 	message( STATUS "-> ROS NOT found")
 endif()
 
+
+
+set( TESTVAR true )
+
+
 add_subdirectory(src)
 
 
